@@ -209,7 +209,7 @@ public class mainActivity extends Activity {
 	    	mLayoutNotifications.addView(data.view);
 	    }
 	    mLayoutNotifications.requestLayout();
-	    BindMusicService();
+	    //BindMusicService();
 	    
 		setButtonIntents();
 		setPlayButton();

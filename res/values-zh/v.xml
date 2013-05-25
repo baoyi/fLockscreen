@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="app_name">宝亿锁屏</string>
+	<string name="music_info"><xliff:g id="artistInfo">%s</xliff:g> - <xliff:g id="trackInfo">%s</xliff:g></string>
+	<!-- sms count -->
+    <string name="lockscreen_sms_count"><xliff:g id="number">%d</xliff:g> Unread SMS</string>
+    <plurals name="lockscreen_missed_count">
+        <item quantity="one"><xliff:g id="number">%d</xliff:g> Missed Call</item>
+        <item quantity="other"><xliff:g id="number">%d</xliff:g> Missed Calls</item>
+    </plurals>
+    <plurals name="lockscreen_email_count">
+        <item quantity="one"><xliff:g id="number">%d</xliff:g> 未读邮件 (<xliff:g id="number">%d</xliff:g> unseen)</item>
+        <item quantity="other"><xliff:g id="number">%d</xliff:g> Unread Emails (<xliff:g id="number">%d</xliff:g> unseen)</item>
+    </plurals>
+        <plurals name="lockscreen_email_count_small">
+        <item quantity="one"><xliff:g id="number">%d</xliff:g> (<xliff:g id="number">%d</xliff:g>)</item>
+        <item quantity="other"><xliff:g id="number">%d</xliff:g> (<xliff:g id="number">%d</xliff:g>)</item>
+    </plurals>
+    <plurals name="lockscreen_email_unread_count">
+        <item quantity="one"><xliff:g id="number">%d</xliff:g> Unread Email</item>
+        <item quantity="other"><xliff:g id="number">%d</xliff:g> Unread Emails</item>
+    </plurals>
+    <plurals name="lockscreen_email_unseen_count">
+        <item quantity="one"><xliff:g id="number">%d</xliff:g> Unseen Email</item>
+        <item quantity="other"><xliff:g id="number">%d</xliff:g> Unseen Emails</item>
+    </plurals>
+    
+    
+    <string name="battery_level">Battery (<xliff:g id="batLevel">%s</xliff:g>)</string>
+    <string name="battery_charging">Charging (<xliff:g id="batLevel">%s</xliff:g>)</string>
+    <string name="battery_charged">Charged</string>
+    <string name="no_service">No Service</string>
+    <string name="no_sim">No SIM</string>
+    <string name="unknown">Unknown</string>
+    <string name="airplane_mode">Airplane Mode</string>
+    
+    <!-- Settings Strings -->
+    <string name="settings">fLockscreen Settings</string>
+    
+    <!-- Enable/Disable Flockscreen -->
+    <string name="enable_disble_title">Enable fLockscreen</string>
+    <string name="enabled">fLockscreen is On</string>
+    <string name="disabled">fLockscreen is Off</string>
+    
+    <!-- Settings Fullscreen -->
+    <string name="fullscreen_title">Fullscreen fLockscreen</string>
+    <string name="fullscreen_summary_on">Fullscreen is enabled</string>
+    <string name="fullscreen_summary_off">Fullscreen is not enabled</string>
+    
+    <!-- Settings Count Down -->
+    <string name="count_time">Action Count down</string>
+	<string name="count_time_summary">Unlock etc. action Count Down</string>
+	<string name="count_down_time">Set Count Down Time</string>
+    
+    <!-- Settings Album Art -->
+    <string name="albumart_title">Album Art Display</string>
+    <string name="albumart_summary">Change wallpaper to Album Art (if any) When Music is Playing</string>
+    
+    <!-- Settings L/R Actions -->
+    <string name="left_action">Set Left Slide Action</string>
+    <string name="left_action_summary">Set what happens when sliding the screen to the right</string>
+    <string name="left_action_title">Set Left Action</string>
+    <string name="right_action">Set Right Slide Action</string>
+    <string name="right_action_summary">Set what happens when sliding the screen to the left</string>
+    <string name="right_action_title">Set Right Action</string>
+    
+    <!-- Settings Action Arrays -->
+    <string-array name="action_entries">
+		<item>Unlock</item>
+		<item>Mute Toggle</item>
+		<item>Wifi Toggle</item>
+		<item>Bluetooth Toggle</item>
+	</string-array>
+	
+	<string-array name="actionvals">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+	
+	<!-- Settings Mute Mode -->
+	<string name="Vibrate_title">Vibrate Mode on Mute</string>
+	<string name="Vibrate_on">When phone is set to Mute Mode, Vibration is on</string>
+	<string name="Vibrate_off">When phone is set to Mute Mode, Vibration is off</string>
+    
+    <!-- Settings Landscape -->
+    <string name="sensor_rotate_title">Sensor Rotation</string>
+    <string name="sensor_rotate_on">fLockscreen will rotate based on the orientation of the phone</string>
+    <string name="sensor_rotate_off">fLockscreen will not rotate based on the orientation of the phone</string>
+    
+    <string name="landscape_title">Landscape Mode</string>
+    <string name="landscape_on">fLockscreen will always show in Landscape mode</string>
+    <string name="landscape_off">fLockscreen will always show in Portrait Mode</string>
+    <string name="landscape_image_warning">After changing display orientation please reselect your background image, If used</string>
+    
+    <!-- Settings Custom Background Image -->
+    <string name="custombg_title">Custom Background Image</string>
+	<string name="custombg_summary_on">Custom Background will be used</string>
+	<string name="custombg_summary_off">Your system wallpaper will be used</string>
+	<string name="custombg_none_selected">No Image Selected</string>
+	
+	<string name="bg_picker_title">Background Select</string>
+	<string name="bg_picker_summary">Choose a background to show behind fLockscreen</string>
+    
+    <!-- Settings Music Players -->
+    
+	<string-array name="players">
+		<item>Stock Android Music</item>
+		<item>HTC Music</item>
+		<item>Music Mod (Market)</item>
+		<item>Music PlayerPro</item>
+		<item>3 Music Player</item>
+	</string-array>
+	
+	<string-array name="players_val">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+	
+	<string name="players_title">Music Player Select</string>
+	<string name="players_summary">Select the Music player that you with fLockscreen to display information from when playing</string>
+	<string name="players_dialog_title">Music Player Select</string>
+	<string name="players_dialog_message">Select your preferred music player</string>
+	
+	<string name="notifications_cat_title">Notification Settings</string>
+	<string name="gmail_settings_title">Gmail Notification Settings</string>
+	<string name="gmail_settings_summary">Change the layout of the notification for emails in gmail accounts.</string>
+	<string name="slide_actions">Slider Action Settings</string>
+	<string name="application_settings_title">Application Settings</string>
+	<string name="layout_settings_title">Layout Settings</string>
+	
+	<string name="small_text_notif_title">Use Short Notifications</string>
+	<string name="small_text_notif_summary">Use Just a Number and icon for Text Notifications (Dependent on selected theme)</string>
+	
+	<!-- Settings Notification enable -->
+	<string name="notif_enable_title">Enable/Disable Notifications</string>
+	<string name="notif_enable_summary">Choose which notifications you wish to display on the lockscreen</string>
+	
+	<string name="sms_count_title">SMS Count</string>
+	<string name="sms_count_summary">Show Number of unread SMS</string>
+
+	<string name="missed_title">Missed Call Count</string>
+	<string name="missed_summary">Show Number of Missed calls</string>
+
+	<string name="gmail_title">Gmail Unread Count</string>
+	<string name="gmail_summary">Show number of unread Gmail Messages</string>
+	
+	<string name="mute_title">Mute Icon</string>
+	<string name="mute_summary">Display icon when mute is enabled</string>
+
+	<string name="usb_ms_title">USB Mass Storage Icon</string>
+	<string name="usb_ms_summary">Display icon when USB mass storage is mounted</string>
+
+	<string name="wifi_title">Wi-Fi Icon</string>
+	<string name="wifi_summary">Display icon when Wi-Fi is connected</string>
+	
+	<string name="bluetooth_title">Bluetooth Icon</string>
+	<string name="bluetooth_summary">Display icon when Bluetooth is enabled</string>
+	
+	<string name="twitter_tweet_title">Twitter - Tweets</string>
+	<string name="twitter_tweet_summary">Show Twitter tweet unread count</string>
+	
+	<string name="twitter_mention_title">Twitter - Mentions</string>
+	<string name="twitter_mention_summary">Show Twitter mention unread count</string>
+	
+	<string name="twitter_direct_title">Twitter - Direct Messages</string>
+	<string name="twitter_direct_summary">Show Twitter Direct Message unread count</string>
+	
+	<!-- gmail settings -->
+	<string name="gmail_label_title">Gmail Account Labels</string>
+	<string name="gmail_label_on">Gmail Accounts displayed on fLockscreen will be labeled with there account address</string>
+	<string name="gmail_label_off">Gmail Acounts displayed on fLockscreen will have no account identification</string>
+	
+	<string name="gmail_view_title">Gmail Information layout</string>
+	<string name="gmail_view_title_dia">Select View Configuration</string>
+	<string name="gmail_view_summary">How you wish your gmail count to be displayed</string>
+	
+	<string-array name="gmail_view_ents">
+		<item>Unread Count Only</item>
+		<item>Unseen Count Only</item>
+		<item>Both Unread and Unseen</item>
+	</string-array>
+	
+	<string-array name="gmail_view_vals">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	
+	<string name="gmail_accounts_title">Merge Gmail Counts</string>
+	<string name="gmail_accounts_on">Counts for all Gmail accounts will be merged</string>
+	<string name="gmail_accounts_off">Counts for Gmail accounts will appear seperately</string>
+    
+    <!-- Settings Info -->
+	<string name="credits_cat">fLockscreen Info</string>
+	<string name="credits_name">fLockscreen</string>
+	<string name="credits_name_summary">By Ander Webb and Eliot Stocker</string>
+	<string name="credits_version">v 0.9.1</string>
+	<string name="credits_version_summary">Private Tester Version - Beta 1.5</string>
+	
+	<!-- Home chooser -->
+	<string name="home_chooser_title">Pick your default home application</string>
+	<string name="home_chooser_summary">Please pick your preferred home application </string>
+	
+	<!-- Service stuff -->
+	<string name="service_foreground_title">Start in foreground</string>
+	<string name="service_foreground_summary_on">Service will likely NOT be killed by android</string>
+	<string name="service_foreground_summary_off">Service will likely BE killed by android sometimes</string>
+	<string name="service_notification">Lock your phone</string>
+	
+    <!-- Theme preferences -->
+	<string name="pref_title_theme_settings">Themes Preferences</string>
+	<string name="pref_summary_theme_settings">Select themes for fLockScreen</string>
+	<string name="pref_title_theme_package">Select your theme</string>
+	<string name="pref_summary_theme_package">Choose your theme for fLockScreen</string>
+	<string name="pref_title_theme_preview">Theme Preview</string>
+	<string name="pref_summary_theme_preview">Preview of the selected theme</string>
+	<string name="pref_themes_apply_theme">应用主题!</string>
+	<string name="pref_themes_get_themes">选择主题!</string>
+	
+	<string name="activity_not_found">Android Market can\'t be found!</string>
+	
+</resources>
