@@ -27,26 +27,26 @@
     </plurals>
     
     
-    <string name="battery_level">Battery (<xliff:g id="batLevel">%s</xliff:g>)</string>
-    <string name="battery_charging">Charging (<xliff:g id="batLevel">%s</xliff:g>)</string>
+    <string name="battery_level">电量 (<xliff:g id="batLevel">%s</xliff:g>)</string>
+    <string name="battery_charging">电量 (<xliff:g id="batLevel">%s</xliff:g>)</string>
     <string name="battery_charged">Charged</string>
-    <string name="no_service">No Service</string>
-    <string name="no_sim">No SIM</string>
-    <string name="unknown">Unknown</string>
-    <string name="airplane_mode">Airplane Mode</string>
+    <string name="no_service">无服务</string>
+    <string name="no_sim">无SIM卡</string>
+    <string name="unknown">位置</string>
+    <string name="airplane_mode">飞行模式</string>
     
     <!-- Settings Strings -->
-    <string name="settings">fLockscreen Settings</string>
+    <string name="settings">设置</string>
     
     <!-- Enable/Disable Flockscreen -->
-    <string name="enable_disble_title">Enable fLockscreen</string>
-    <string name="enabled">fLockscreen is On</string>
-    <string name="disabled">fLockscreen is Off</string>
+    <string name="enable_disble_title">是否打开锁屏</string>
+    <string name="enabled">锁屏已经打开</string>
+    <string name="disabled">锁屏已经关闭</string>
     
     <!-- Settings Fullscreen -->
-    <string name="fullscreen_title">Fullscreen fLockscreen</string>
-    <string name="fullscreen_summary_on">Fullscreen is enabled</string>
-    <string name="fullscreen_summary_off">Fullscreen is not enabled</string>
+    <string name="fullscreen_title">是否全屏</string>
+    <string name="fullscreen_summary_on">全屏已经打开</string>
+    <string name="fullscreen_summary_off">全屏已经关闭</string>
     
     <!-- Settings Count Down -->
     <string name="count_time">Action Count down</string>
@@ -67,10 +67,10 @@
     
     <!-- Settings Action Arrays -->
     <string-array name="action_entries">
-		<item>Unlock</item>
+		<item>解锁</item>
 		<item>Mute Toggle</item>
-		<item>Wifi Toggle</item>
-		<item>Bluetooth Toggle</item>
+		<item>关闭wifi</item>
+		<item>关闭蓝牙</item>
 	</string-array>
 	
 	<string-array name="actionvals">
@@ -204,8 +204,8 @@
 	<string name="credits_version_summary">Private Tester Version - Beta 1.5</string>
 	
 	<!-- Home chooser -->
-	<string name="home_chooser_title">Pick your default home application</string>
-	<string name="home_chooser_summary">Please pick your preferred home application </string>
+	<string name="home_chooser_title">选择默认桌面</string>
+	<string name="home_chooser_summary">选择你喜欢的桌面</string>
 	
 	<!-- Service stuff -->
 	<string name="service_foreground_title">Start in foreground</string>
@@ -214,12 +214,12 @@
 	<string name="service_notification">Lock your phone</string>
 	
     <!-- Theme preferences -->
-	<string name="pref_title_theme_settings">Themes Preferences</string>
-	<string name="pref_summary_theme_settings">Select themes for fLockScreen</string>
-	<string name="pref_title_theme_package">Select your theme</string>
-	<string name="pref_summary_theme_package">Choose your theme for fLockScreen</string>
-	<string name="pref_title_theme_preview">Theme Preview</string>
-	<string name="pref_summary_theme_preview">Preview of the selected theme</string>
+	<string name="pref_title_theme_settings">选择主题</string>
+	<string name="pref_summary_theme_settings">选择你喜欢的主题</string>
+	<string name="pref_title_theme_package">选择主题</string>
+	<string name="pref_summary_theme_package">选择你喜欢的主题</string>
+	<string name="pref_title_theme_preview">主体预览</string>
+	<string name="pref_summary_theme_preview">你选择的主题样子</string>
 	<string name="pref_themes_apply_theme">应用主题!</string>
 	<string name="pref_themes_get_themes">选择主题!</string>
 	

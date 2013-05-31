@@ -8,7 +8,6 @@
 		android:summaryOn="@string/enabled" android:summaryOff="@string/disabled"/>
 	
 	<PreferenceCategory android:title="@string/layout_settings_title">
-	
 	<CheckBoxPreference android:key="albumart"
 		android:defaultValue="true" android:title="@string/albumart_title"
 		android:summary="@string/albumart_summary" />

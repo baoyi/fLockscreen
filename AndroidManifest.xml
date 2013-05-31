@@ -1,84 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.piratemedia.lockscreen" android:versionCode="1"
-	android:versionName="1.0">
-	
-	<application android:name=".LockScreenApp" android:icon="@drawable/icon"
-		android:label="@string/app_name">
-		<activity android:name=".mainActivity" android:label="@string/app_name"
-			android:taskAffinity=".mainActivity" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
-			android:screenOrientation="nosensor" android:launchMode="singleTask" android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
-			<intent-filter android:priority="999" >
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.HOME" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<category android:name="android.intent.category.MONKEY" />
-			</intent-filter>
-		</activity>
-		<activity android:name=".LockscreenSettings" android:label="@string/settings"
-			android:icon="@drawable/icon" android:taskAffinity=".LockscreenSettings">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
-		<activity android:name=".HomeChooserActivity" android:label="@string/home_chooser_title"
-				android:theme="@android:style/Theme.Dialog">
-		</activity>
-		<service android:name=".updateService" />
-		<receiver android:name=".intentReceiver">
-			<intent-filter>
-				<action android:name="com.android.music.playstatechanged" />
-				<action android:name="com.android.music.playbackcomplete" />
-				<action android:name="com.android.music.metachanged" />
-				<action android:name="com.android.music.queuechanged" />
-				<action android:name="com.htc.music.playstatechanged" />
-				<action android:name="com.htc.music.playbackcomplete" />
-				<action android:name="com.htc.music.metachanged" />
-				<action android:name="com.htc.music.queuechanged" />
-				<action android:name="com.piratemedia.musicmod.playstatechanged" />
-				<action android:name="com.piratemedia.musicmod.playbackcomplete" />
-				<action android:name="com.piratemedia.musicmod.metachanged" />
-				<action android:name="com.piratemedia.musicmod.queuechanged" />
-				<action android:name="com.tbig.playerpro.playstatechanged" />
+    package="com.piratemedia.lockscreen"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="5" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" >
+    </uses-permission>
+    <uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <application
+        android:name=".LockScreenApp"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".mainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:taskAffinity=".mainActivity"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LockscreenSettings"
+            android:icon="@drawable/icon"
+            android:label="@string/settings"
+            android:taskAffinity=".LockscreenSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeChooserActivity"
+            android:label="@string/home_chooser_title"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <service android:name=".updateService" />
+
+        <receiver android:name=".intentReceiver" >
+            <intent-filter>
+                <action android:name="com.android.music.playstatechanged" />
+                <action android:name="com.android.music.playbackcomplete" />
+                <action android:name="com.android.music.metachanged" />
+                <action android:name="com.android.music.queuechanged" />
+                <action android:name="com.htc.music.playstatechanged" />
+                <action android:name="com.htc.music.playbackcomplete" />
+                <action android:name="com.htc.music.metachanged" />
+                <action android:name="com.htc.music.queuechanged" />
+                <action android:name="com.piratemedia.musicmod.playstatechanged" />
+                <action android:name="com.piratemedia.musicmod.playbackcomplete" />
+                <action android:name="com.piratemedia.musicmod.metachanged" />
+                <action android:name="com.piratemedia.musicmod.queuechanged" />
+                <action android:name="com.tbig.playerpro.playstatechanged" />
                 <action android:name="com.tbig.playerpro.metachanged" />
                 <action android:name="com.tbig.playerpro.queuechanged" />
                 <action android:name="com.tbig.playerpro.playbackcomplete" />
-				<action android:name="org.abrantix.rockon.rockonnggl.playstatechanged" /> 
+                <action android:name="org.abrantix.rockon.rockonnggl.playstatechanged" />
                 <action android:name="org.abrantix.rockon.rockonnggl.metachanged" />
                 <action android:name="org.abrantix.rockon.rockonnggl.queuechanged" />
                 <action android:name="org.abrantix.rockon.rockonnggl.playbackcomplete" />
-				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
-				<action android:name="android.intent.action.PHONE_STATE"/>
-				<action android:name="android.intent.action.BATTERY_CHANGED"/>
-				<action android:name="android.intent.action.AIRPLANE_MODE"/>
-				<action android:name="android.media.RINGER_MODE_CHANGED"/>
-				<action android:name="android.intent.action.BOOT_COMPLETED"/>
-				<action android:name="android.net.wifi.STATE_CHANGE"/>
-				<action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
-				<action android:name="com.piratemedia.lockscreen.forground"/>
-				<action android:name="com.piratemedia.lockscreen.kill"/>
-				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
-			
-</intent-filter>
-		</receiver>
-	</application>
-	<uses-sdk android:minSdkVersion="5" />
-	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
-	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
-	<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
-	<uses-permission android:name="android.permission.BATTERY_STATS" />
-	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
-	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
-	<uses-permission android:name="com.google.android.gm.permission.READ_GMAIL"></uses-permission>
-	<uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
-	<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
-	<uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="com.piratemedia.lockscreen.forground" />
+                <action android:name="com.piratemedia.lockscreen.kill" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
 
-</manifest> 
+
+</manifest>

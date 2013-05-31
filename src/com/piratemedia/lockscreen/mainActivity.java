@@ -1902,7 +1902,7 @@ public class mainActivity extends Activity {
 	 */
 	private void unlockScreen() {
 		unlocked = true;
-		whatsHappening(ACTION_UNLOCK, Toast.LENGTH_SHORT);
+		//whatsHappening(ACTION_UNLOCK, Toast.LENGTH_SHORT);
 		Handler handler = new Handler();
 		handler.postDelayed(new Runnable() {
 			public void run() {
